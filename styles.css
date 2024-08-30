@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #2e2e2e;
+    color: #130101;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1541167760496-1628856ab772');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero .btn {
+    background-color: #d2691e;
+    color: #fff;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.menu {
+    padding: 3rem 1.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-item {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #4a3f35;
+}
+
+.menu-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.gallery {
+    padding: 3rem 1.5rem;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #d2691e;
+    text-decoration: none;
+    font-weight: bold;
+}
+#smoothies-and-coffees {
+    background-color: #f9f9f9;
+}
+#smoothies-and-coffees h2 {
+    font-family: 'Lobster', cursive;
+    color: var(--secondary-color);
+}
+
+#smoothies-and-coffees h3 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+}
+#smoothies-and-coffees .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#smoothies-and-coffees .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#smoothies-and-coffees .card-title {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+#smoothies-and-coffees .card-text {
+    font-size: 0.95rem;
+}
+#smoothies-and-coffees .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* (Basic styles from the previous example remain the same) */
+.specials {
+    padding: 3rem 1.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.special-item {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.special-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.special-item h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #4a3f35;
+}
+
